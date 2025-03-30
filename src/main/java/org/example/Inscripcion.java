@@ -11,6 +11,6 @@ public class Inscripcion {
     }
 
     public boolean aprobada() {
-        return materiasSolicitadas.stream().allMatch(m -> m.cumpleCorrelativas(alumno.getMateriasAprobadas()));
+        return materiasSolicitadas.stream().allMatch(unaMateria -> unaMateria.cumpleCorrelativas(alumno.getMateriasAprobadas()));
     }
 }
