@@ -11,6 +11,10 @@ public class Alumno {
         this.materiasAprobadas = new HashSet<>();
     }
 
+    public void aprobarMateria(Materia materia) {
+        materiasAprobadas.add(materia);
+    }
+
     public boolean aproboMateria(Materia materia) {
         return materiasAprobadas.contains(materia);
     }
